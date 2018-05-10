@@ -1,0 +1,569 @@
+body{
+	overflow: hidden;
+	font-size: 14pt;
+	font-family: Arial;
+	background-color: rgb(102, 51, 0);
+}
+
+.square{
+	width: 100px; 
+	height: 100px;
+	position: absolute;
+	display: inline-block;
+}
+
+.goldDown{
+	background: linear-gradient(0deg, #996600, white);
+	border-bottom-right-radius: 100%;
+	border-bottom-left-radius: 100%;
+	
+	animation: rDL 4s linear forwards;
+	animation-iteration-count: infinite;
+	
+	-webkit-animation: rDL 4s linear forwards;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes rDL{
+	0%	{background: linear-gradient(0deg, #996600, white);}
+	50%	{background: linear-gradient(0deg, white, #996600);}
+	100%	{background: linear-gradient(0deg, #996600, white);}
+}
+
+@-webkit-keyframes rDL{
+	0%	{background: linear-gradient(0deg, #996600, white);}
+	50%	{background: linear-gradient(0deg, white, #996600);}
+	100%	{background: linear-gradient(0deg, #996600, white);}
+}
+
+.goldLeft{
+	background: linear-gradient(90deg, #996600, white);
+	border-bottom-left-radius: 100%;
+	border-top-left-radius: 100%;
+	
+	animation: rLL 4s linear forwards;
+	animation-iteration-count: infinite;
+	
+	-webkit-animation: rLL 4s linear forwards;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes rLL{
+	0%	{background: linear-gradient(90deg, #996600, white);}
+	50%	{background: linear-gradient(90deg, white, #996600);}
+	100%	{background: linear-gradient(90deg, #996600, white);}
+}
+
+@-webkit-keyframes rLL{
+	0%	{background: linear-gradient(90deg, #996600, white);}
+	50%	{background: linear-gradient(90deg, white, #996600);}
+	100%	{background: linear-gradient(90deg, #996600, white);}
+}
+
+.goldUp{
+	background: linear-gradient(180deg, #996600, white);
+	border-top-right-radius: 100%;
+	border-top-left-radius: 100%;
+	
+	animation: rUL 4s linear forwards;
+	animation-iteration-count: infinite;
+	
+	-webkit-animation: rUL 4s linear forwards;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes rUL{
+	0%	{background: linear-gradient(180deg, #996600, white);}
+	50%	{background: linear-gradient(180deg, white, #996600);}
+	100%	{background: linear-gradient(180deg, #996600, white);}
+}
+
+@-webkit-keyframes rUL{
+	0%	{background: linear-gradient(180deg, #996600, white);}
+	50%	{background: linear-gradient(180deg, white, #996600);}
+	100%	{background: linear-gradient(180deg, #996600, white);}
+}
+
+.goldRight{
+	background: linear-gradient(270deg, #996600, white);
+	border-bottom-right-radius: 100%;
+	border-top-right-radius: 100%;
+	
+	animation: rRL 4s linear forwards;
+	animation-iteration-count: infinite;
+	
+	-webkit-animation: rRL 4s linear forwards;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes rRL{
+	0%	{background: linear-gradient(270deg, #996600, white);}
+	50%	{background: linear-gradient(270deg, white, #996600);}
+	100%	{background: linear-gradient(270deg, #996600, white);}
+}
+
+@-webkit-keyframes rRL{
+	0%	{background: linear-gradient(270deg, #996600, white);}
+	50%	{background: linear-gradient(270deg, white, #996600);}
+	100%	{background: linear-gradient(270deg, #996600, white);}
+}
+
+.goldCenter{
+	background: radial-gradient(circle, #996600, white);
+	border-radius: 100%;
+	
+	animation: rCC 4s linear forwards;
+	animation-iteration-count: infinite;
+	
+	-webkit-animation: rCC 4s linear forwards;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes rCC{
+	0%	{background: radial-gradient(circle, #996600, white);}
+	50%	{background: radial-gradient(circle, white, #996600);}
+	100%	{background: radial-gradient(circle, #996600, white);}
+}
+
+@-webkit-keyframes rCC{
+	0%	{background: linear-gradient(0deg, #996600, white);}
+	50%	{background: linear-gradient(0deg, white, #996600);}
+	100%	{background: linear-gradient(0deg, #996600, white);}
+}
+
+.goldOuter{
+	background: radial-gradient(circle, white, #996600);
+	border-radius: 100%;
+	
+	animation: rOC 4s linear forwards;
+	animation-iteration-count: infinite;
+	
+	-webkit-animation: rOC 4s linear forwards;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes rOC{
+	0%	{background: radial-gradient(circle, white, #996600);}
+	50%	{background: radial-gradient(circle, #996600, white);}
+	100%	{background: radial-gradient(circle, white, #996600);}
+}
+
+@-webkit-keyframes rOC{
+	0%	{background: radial-gradient(circle, white, #996600);}
+	50%	{background: radial-gradient(circle, #996600, white);}
+	100%	{background: radial-gradient(circle, white, #996600);}
+}
+
+.purpleDown{
+	background: linear-gradient(0deg, #444422, white);
+	border-bottom-right-radius: 100%;
+	border-bottom-left-radius: 100%;
+	
+	animation: gDL 4s linear forwards;
+	animation-iteration-count: infinite;
+	
+	-webkit-animation: gDL 4s linear forwards;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes gDL{
+	0%	{background: linear-gradient(0deg, #444422, white);}
+	50%	{background: linear-gradient(0deg, white, #444422);}
+	100%	{background: linear-gradient(0deg, #444422, white);}
+}
+
+@-webkit-keyframes gDL{
+	0%	{background: linear-gradient(0deg, #444422, white);}
+	50%	{background: linear-gradient(0deg, white, #444422);}
+	100%	{background: linear-gradient(0deg, #444422, white);}
+}
+
+.purpleLeft{
+	background: linear-gradient(90deg, #444422, white);
+	border-bottom-left-radius: 100%;
+	border-top-left-radius: 100%;
+	
+	animation: gLL 4s linear forwards;
+	animation-iteration-count: infinite;
+	
+	-webkit-animation: gLL 4s linear forwards;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes gLL{
+	0%	{background: linear-gradient(90deg, #444422, white);}
+	50%	{background: linear-gradient(90deg, white, #444422);}
+	100%	{background: linear-gradient(90deg, #444422, white);}
+}
+
+@-webkit-keyframes gLL{
+	0%	{background: linear-gradient(90deg, #444422, white);}
+	50%	{background: linear-gradient(90deg, white, #444422);}
+	100%	{background: linear-gradient(90deg, #444422, white);}
+}
+
+.purpleUp{
+	background: linear-gradient(180deg, #444422, white);
+	border-top-right-radius: 100%;
+	border-top-left-radius: 100%;
+	
+	animation: gUL 4s linear forwards;
+	animation-iteration-count: infinite;
+	
+	-webkit-animation: gUL 4s linear forwards;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes gUL{
+	0%	{background: linear-gradient(180deg, #444422, white);}
+	50%	{background: linear-gradient(180deg, white, #444422);}
+	100%	{background: linear-gradient(180deg, #444422, white);}
+}
+
+@-webkit-keyframes gUL{
+	0%	{background: linear-gradient(180deg, #444422, white);}
+	50%	{background: linear-gradient(180deg, white, #444422);}
+	100%	{background: linear-gradient(180deg, #444422, white);}
+}
+
+.purpleRight{
+	background: linear-gradient(270deg, #444422, white);
+	border-bottom-right-radius: 100%;
+	border-top-right-radius: 100%;
+	
+	animation: gRL 4s linear forwards;
+	animation-iteration-count: infinite;
+	
+	-webkit-animation: gRL 4s linear forwards;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes gRL{
+	0%	{background: linear-gradient(270deg, #444422, white);}
+	50%	{background: linear-gradient(270deg, white, #444422);}
+	100%	{background: linear-gradient(270deg, #444422, white);}
+}
+
+@-webkit-keyframes gRL{
+	0%	{background: linear-gradient(270deg, #444422, white);}
+	50%	{background: linear-gradient(270deg, white, #444422);}
+	100%	{background: linear-gradient(270deg, #444422, white);}
+}
+
+.purpleCenter{
+	background: radial-gradient(circle, #444422, white);
+	border-radius: 100%;
+	
+	animation: gCC 4s linear forwards;
+	animation-iteration-count: infinite;
+	
+	-webkit-animation: gCC 4s linear forwards;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes gCC{
+	0%	{background: radial-gradient(circle, #444422, white);}
+	50%	{background: radial-gradient(circle, white, #444422);}
+	100%	{background: radial-gradient(circle, #444422, white);}
+}
+
+@-webkit-keyframes gCC{
+	0%	{background: linear-gradient(0deg, #444422, white);}
+	50%	{background: linear-gradient(0deg, white, #444422);}
+	100%	{background: linear-gradient(0deg, #444422, white);}
+}
+
+.purpleOuter{
+	background: radial-gradient(circle, white, #444422);
+	border-radius: 100%;
+	
+	animation: gOC 4s linear forwards;
+	animation-iteration-count: infinite;
+	
+	-webkit-animation: gOC 4s linear forwards;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes gOC{
+	0%	{background: radial-gradient(circle, white, #444422);}
+	50%	{background: radial-gradient(circle, #444422, white);}
+	100%	{background: radial-gradient(circle, white, #444422);}
+}
+
+@-webkit-keyframes gOC{
+	0%	{background: radial-gradient(circle, white, #444422);}
+	50%	{background: radial-gradient(circle, #444422, white);}
+	100%	{background: radial-gradient(circle, white, #444422);}
+}
+
+.greenCenter{
+	background: radial-gradient(circle, #00cc00, black);
+	border-radius: 100%;
+	border: 2px solid black;
+	
+	animation: eye 4s linear forwards;
+	animation-iteration-count: infinite;
+	
+	-webkit-animation: green 4s linear forwards;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes eye{
+	0%	{background: radial-gradient(circle, #00cc00, black);}
+	50%	{background: radial-gradient(circle, black, #00cc00);}
+	100%	{background: radial-gradient(circle, #00cc00, black);}
+}
+
+@-webkit-keyframes eye{
+	0%	{background: radial-gradient(circle, #00cc00, black);}
+	50%	{background: radial-gradient(circle, black, #00cc00);}
+	100%	{background: radial-gradient(circle, #00cc00, black);}
+}
+
+.darkbrownNose{
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 25px solid #804000;
+    border-top: 0px solid transparent;
+	position: absolute;
+}
+
+.lips{
+	background-color: #eec1ad;
+	border-radius: 75%;
+	border: 2px solid #dbac98;
+	position: absolute;
+}
+
+.animate{
+	left: 50px;
+	position: absolute;
+	animation: walkLeft 10s linear forwards;
+	animation-iteration-count: infinite;
+	-webkit-animation: walkLeft 10s linear forwards;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes walkLeft{
+	0%	{left: 50px;}
+	50%	{left: 750px;}
+	100%	{left: 50px;}
+}
+
+@-webkit-keyframes walkLeft{
+	0%	{left: 50px;}
+	50%	{left: 750px;}
+	100%	{left: 50px;}
+}
+
+.uLeg{
+	animation: uLeg 4s linear forwards;
+	animation-iteration-count: infinite;
+	-webkit-animation: uLeg 4s linear forwards;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes uLeg{
+	0%	{}
+	25%	{transform: rotate(5deg);}
+	50%	{transform: rotate(-5deg);}
+	100% {transform: rotate(0deg);}
+}
+
+@-webkit-keyframes uLeg{
+	0%	{}
+	25%	{transform: rotate(5deg);}
+	50%	{transform: rotate(-5deg);}
+	100% {transform: rotate(0deg);}
+}
+
+.dLeg{
+	animation: dLeg 4s linear forwards;
+	animation-iteration-count: infinite;
+	-webkit-animation: dLeg 4s linear forwards;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes dLeg{
+	25%	{transform: rotate(-5deg);}
+	50%	{transform: rotate(5deg);}
+	100% {transform: rotate(0deg);}
+}
+
+@-webkit-keyframes dLeg{
+	25%	{transform: rotate(-5deg);}
+	50%	{transform: rotate(5deg);}
+	100% {transform: rotate(0deg);}
+}
+
+.headBob{
+	position: absolute;
+	top: 0px;
+	animation: headBob 4s linear forwards;
+	animation-iteration-count: infinite;
+	-webkit-animation: headBob 4s linear forwards;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes headBob{
+	25%	{top: 20px;}
+	75%	{top: -20px;}
+}
+
+@-webkit-keyframes headBob{
+	25%	{top: 20px;}
+	75%	{top: -20px;}
+}
+
+.road{
+	width: 145vw;
+	height: 15vh;
+	background-color: darkgray;
+	position: absolute;
+}
+
+.lrTriangle{
+    border-left: 0px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 100px solid black;
+    border-top: 0px solid transparent;
+	position: absolute;
+}
+
+.ulTriangle{
+	border-left: 150px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-top: 100px solid black;
+	position: absolute;
+}
+
+.eTriangle{
+	border-left: 75px solid transparent;
+	border-right: 75px solid transparent;
+	border-top: 0px solid transparent;
+	border-bottom: 75px solid rgb(1,121,111);
+	position: absolute;
+}
+
+.trunk{
+	background: linear-gradient(180deg, #cc9900, #ffc61a);
+	position: absolute;
+	border-top-right-radius: 100%;
+	border-top-left-radius: 100%;
+	width: 45px;
+	height: 75px;
+	
+	animation: trunkShadow 4s linear forwards;
+	animation-iteration-count: infinite;
+	-webkit-animation: trunkShadow 4s linear forwards;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes trunkShadow{
+	/* 0%	{background: linear-gradient(180deg, #cc9900, #ffc61a);} */
+	50%	{background: linear-gradient(180deg, #ffc61a, #cc9900);}
+	100%	{background: linear-gradient(180deg, #cc9900, #ffc61a);}
+}
+
+@-webkit-keyframes trunkShadow{
+	/* 0%	{background: linear-gradient(180deg, #cc9900, #ffc61a);} */
+	50%	{background: linear-gradient(180deg, #ffc61a, #cc9900);}
+	100%	{background: linear-gradient(180deg, #cc9900, #ffc61a);}
+}
+
+.axTree{
+	left: 0px;
+}
+
+.bxTree{
+	left: 100px;
+}
+
+.cxTree{
+	left: 200px;
+}
+
+.dxTree{
+	left: 300px;
+}
+
+.exTree{
+	left: 400px;
+}
+
+.fxTree{
+	left: 500px;
+}
+
+.gxTree{
+	left: 600px;
+}
+
+.hxTree{
+	left: 700px;
+}
+
+.ixTree{
+	left: 800px;
+}
+
+.jxTree{
+	left: 900px;
+}
+
+.kxTree{
+	left: 1000px;
+}
+
+.lxTree{
+	left: 1100px;
+}
+
+.mxTree{
+	left: 1200px;
+}
+
+.nxTree{
+	left: 1300px;
+}
+
+.oxTree{
+	left: 1400px;
+}
+
+.pxTree{
+	left: 1500px;
+}
+
+.qxTree{
+	left: 1600px;
+}
+
+.rxTree{
+	left: 1700px;
+}
+
+.ayTree{
+	top: 100px;
+}
+
+.byTree{
+	top: 75px;
+}
+
+.cyTree{
+	top: 50px;
+}
+
+.dyTree{
+	top: 225px;
+}
+
+.eyTree{
+	top: 200px;
+}
+
+.fyTree{
+	top: 175px;
+}
